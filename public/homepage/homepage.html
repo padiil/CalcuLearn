@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CalcuLearn</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body class="font-ibm">
+    <!-- Navbar -->
+    <div
+      class="flex fixed items-center w-full top-0 left-0 bg-white shadow-[0px_4px_4px_0px_#00000024] px-4 md:px-16 xl:px-40 xl:h-14"
+    >
+      <div class="flex w-[100%] justify-between">
+        <div class="flex text-black text-2xl h-12 xl:text-3xl">
+          <p class="self-center">CalcuLearn</p>
+          <div class="text-sm items-start">
+            <p>beta</p>
+          </div>
+        </div>
+
+        <!-- hamburger button -->
+        <div class="flex flex-col items-end mt-3 md:hidden">
+          <div class="flex">
+            <button id="hamButton" class="justify-center flex-col space-y-2">
+              <span class="block w-5 h-[2px] rounded-md bg-black"></span>
+              <span class="block w-8 h-[2px] rounded-md bg-black"></span>
+              <span class="block w-8 h-[2px] rounded-md bg-black"></span>
+            </button>
+          </div>
+        </div>
+
+        <!-- menu -->
+        <div class="flex max-md:hidden">
+          <ul class="flex items-center mx-4">
+            <a href="homepage.html" class="hover:border-b-4 hover:border-black">Home</a>
+          </ul>
+
+          <ul class="flex items-center mx-4">
+            <a href="" class="hover:border-b-4 hover:border-black">About</a>
+          </ul>
+
+          <ul class="flex items-center mx-4 mr-0">
+            <a href="" class="hover:border-b-4 hover:border-black">Setting</a>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- content -->
+    <!-- menu hamburger -->
+
+    <div class="flex w-[100%] justify-end">
+      <div id="hamMenu"
+        class="hidden fixed bg-white px-4 w-[100px] h-[120px] shadow-md flex-col my-12"
+      >
+        <ul class="flex items-center my-2 justify-end">
+          <a href="homepage.html" class="hover:border-b-2 hover:border-black">Home</a>
+        </ul>
+        <ul class="flex items-center my-2 justify-end">
+          <a href="" class="hover:border-b-2 hover:border-black">About</a>
+        </ul>
+        <ul class="flex items-center my-2 justify-end">
+          <a href="" class="hover:border-b-2 hover:border-black">Setting</a>
+        </ul>
+      </div>
+    </div>
+
+    <!-- h1 -->
+    <div class="flex flex-col mx-4 md:mx-16 xl:mx-40 xl:my-4">
+      <h1 class="text-black text-[30px]  font-bold mt-20 md:text-5xl lg:text-[60px] xl:text-[80px]">
+        Easy way to learn Calculus
+      </h1>
+
+      <div class="h-50 w-100 my-4 xl:my-12">
+        <img
+          class="h-[100px] md:h-[180px]"
+          src="../../src/img/Calculus.svg"
+          alt="Rumus Turunan"
+        />
+      </div>
+
+      <!-- content card -->
+      <div class="flex justify-center flex-col sm:flex-row sm:justify-around md:flex-row md:justify-around md:mt-6">
+        <div class="flex justify-center h-[120px]">
+          <a href="content_list_page/content-list-page.html">
+            <button
+              class="flex items-center justify-center w-[150px] h-[80px] bg-white rounded-md border border-black shadow-[8px_8px] my-2 hover:my-0 hover:shadow-[16px_16px] active:shadow-[2px_2px] active:my-4 lg:w-[230px] xl:w-[300px] xl:h-[100px]"
+            >
+              <div>
+                <p class="text-black text-[20px] font-bold xl:text-[25px]">Calculus 1</p>
+              </div>
+            </button>
+          </a>
+        </div>
+        <div class="flex justify-center h-[120px]">
+          <a href="">
+            <button
+              class="flex items-center justify-center w-[150px] h-[80px] bg-white rounded-md border border-black shadow-[8px_8px] my-2 hover:my-0 hover:shadow-[16px_16px] active:shadow-[2px_2px] active:my-4 lg:w-[230px] xl:w-[300px] xl:h-[100px]"
+            >
+              <div>
+                <p class="text-black text-[20px] font-bold xl:text-[25px]">
+                  Calculus 2 <br />
+                </p>
+
+                <p class="text-[15px]">Coming Soon</p>
+              </div>
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="../js/script.js"></script>
+    
+  </body>
+</html>
