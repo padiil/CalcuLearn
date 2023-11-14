@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="#" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CalcuLearn</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="../../../../css/style.css" />
+  </head>
+
+  <body class="font-ibm bg-white">
+    <!-- Navbar -->
+    <div
+      class="flex fixed items-center w-full top-0 left-0 bg-white shadow-[0px_4px_4px_0px_#00000024] px-4 md:px-16 xl:px-40 xl:h-14"
+    >
+      <div class="flex w-[100%] justify-between">
+        <div class="flex text-black text-2xl h-12 xl:text-3xl">
+          <p class="self-center">CalcuLearn</p>
+          <div class="text-sm items-start">
+            <p>beta</p>
+          </div>
+        </div>
+
+        <!-- hamburger button -->
+        <div class="flex flex-col items-end mt-3 md:hidden">
+          <div class="flex">
+            <button id="hamButton" class="justify-center flex-col space-y-2">
+              <span class="block w-5 h-[2px] rounded-md bg-black"></span>
+              <span class="block w-8 h-[2px] rounded-md bg-black"></span>
+              <span class="block w-8 h-[2px] rounded-md bg-black"></span>
+            </button>
+          </div>
+        </div>
+
+        <!-- menu -->
+        <div class="flex max-md:hidden">
+          <ul class="flex items-center mx-4">
+            <a href="../../homepage.html" class="hover:border-b-4 hover:border-black">Home</a>
+          </ul>
+
+          <ul class="flex items-center mx-4">
+            <a href="../../../about-page.html" class="hover:border-b-4 hover:border-black">About</a>
+          </ul>
+
+          <ul class="flex items-center mx-4 mr-0">
+            <a href="" class="hover:border-b-4 hover:border-black">Setting</a>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- content -->
+    <!-- menu hamburger -->
+
+    <div class="flex w-[100%] justify-end">
+      <div
+        id="hamMenu"
+        class="hidden fixed bg-white px-4 w-[100px] h-[120px] shadow-md flex-col my-12"
+      >
+        <ul class="flex items-center my-2 justify-end">
+          <a href="../../homepage.html" class="hover:border-b-2 hover:border-black">Home</a>
+        </ul>
+        <ul class="flex items-center my-2 justify-end">
+          <a href="../../../about-page.html" class="hover:border-b-2 hover:border-black">About</a>
+        </ul>
+        <ul class="flex items-center my-2 justify-end">
+          <a href="" class="hover:border-b-2 hover:border-black">Setting</a>
+        </ul>
+      </div>
+    </div>
+    <script src="../../../../js/script.js"></script>
+
+    <!-- content -->
+    <div class="flex flex-col mb-16 mx-4 mt-12 md:mx-16 xl:mx-40 xl:mt-16">
+      <!-- deskripsi -->
+      <div class="text-[12px] mt-6 mb-8 md:text-[16px]">
+        <h1 class="text-[20px] font-bold md:text-[35px]">Linear Function</h1>
+        <hr class="h-4" />
+
+        <p>
+          A linear function is a mathematical expression that represents a
+          straight line on a coordinate plane. It has the general form f(x) = ax
+          + b, where x is the independent variable, f(x) is the dependent
+          variable, and a and b are constants. The coefficient a determines the
+          slope or steepness of the line, while the constant term b represents
+          the y-intercept, the point where the line crosses the y-axis.
+        </p>
+        <br />
+        <p>
+          In this equation, f(x) is the output or dependent variable, and x is
+          the input or independent variable. The graph of a linear function is a
+          straight line, and its behavior is characterized by the values of a
+          and b. When a is positive, the line slopes upward from left to right,
+          and when a is negative, the line slopes downward. The value of b
+          shifts the entire line up or down along the y-axis.
+        </p>
+      </div>
+      <!-- input/output section -->
+      <div
+        class="flex flex-col border-[2px] rounded-md py-2 mb-4 lg:flex-row lg:px-4"
+      >
+        <!-- left section -->
+        <div class="flex flex-col items-center lg:pr-4">
+          <!-- input section -->
+          <div class="mb-4 text-center text-[15px] xl:text-[20px]">
+            <h2>General Form</h2>
+            <p class="text-[20px] xl:text-[25px]">f(x) = ax+b <br>a ≠ 0</p>
+          </div>
+          <div
+            class="flex flex-col justify-center bg-gray-200 rounded-md h-48 lg:w-[330px] xl:w-[400px]"
+          >
+            <div class="flex justify-center my-4 mt-0">
+              <h2 class="flex text-[15px] xl:text-[20px]">
+                Input Linear Function
+              </h2>
+            </div>
+
+            <div class="flex justify-center">
+              <div>
+                <label for="inputA">a:</label>
+                <input type="number" id="inputA" class="w-[70px]" />
+              </div>
+
+              <div class="ml-4">
+                <label for="inputB">b:</label>
+                <input type="number" id="inputB" class="w-[70px]" />
+              </div>
+            </div>
+
+            <div class="flex justify-center my-2 mx-4 mb-0 px-4">
+              <button
+                id="Solve"
+                onclick="plotGraph()"
+                class="w-[80px] h-[30px] bg-white my-4 rounded-md border border-black mr-5 shadow-[4px_4px] hover:shadow-[6px_6px] hover:my-3 active:shadow-[1px_1px] active:my-4 xl:w-[110px]"
+              >
+                Plot
+              </button>
+
+              <button
+                id="Reset"
+                onclick="resetGraph()"
+                class="w-[80px] h-[30px] bg-white my-4 rounded-md border border-black ml-5 shadow-[4px_4px] hover:shadow-[6px_6px] hover:my-3 active:shadow-[1px_1px] active:my-4 xl:w-[110px]"
+              >
+                Reset
+              </button>
+            </div>
+          </div>
+
+          <div id="expression" class="flex text-[25px] my-8 xl:text-[30px]">
+            <p>f(x) =&ensp;</p>
+            <p id="aExpression"></p>
+            <p id="bExpression"></p>
+          </div>
+        </div>
+
+        <div class="flex lg:w-[100%]">
+          <canvas
+            id="myChart"
+            width="600"
+            height="400"
+            class="w-[100%]"
+          ></canvas>
+          <script>
+            let ctx = document.getElementById("myChart").getContext("2d");
+            chart = new Chart(ctx, {
+              type: "line",
+              data: {
+                labels: [],
+                datasets: [
+                  {
+                    label: "Linear Function",
+                    borderColor: "rgb(75, 192, 192)",
+                    data: [],
+                    fill: false,
+                  },
+                ],
+              },
+              options: {
+                scales: {
+                  x: {
+                    type: "linear",
+                    position: "bottom",
+                  },
+                  y: {
+                    type: "linear",
+                    position: "left",
+                  },
+                },
+              },
+            });
+          </script>
+        </div>
+      </div>
+    </div>
+
+    <script src="linear.js"></script>
+  </body>
+</html>
