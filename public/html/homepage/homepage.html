@@ -40,8 +40,9 @@
             <a href="../about-page.html" class="hover:border-b-4 hover:border-black">About</a>
           </ul>
 
-          <ul class="flex items-center mx-4 mr-0">
-            <a href="" class="hover:border-b-4 hover:border-black">Setting</a>
+          <ul class="flex items-center mx-4 mr-0 w-20 justify-between">
+            <button id="ENGLang" type="button" onclick="changeLanguage('en')" class="border-black bg-black text-white px-2 rounded-md">EN</button>
+            <button id="IDLang" type="button" onclick="changeLanguage('id')" class="px-2 rounded-md border-[2px] active:bg-black active:text-white">ID</button>
           </ul>
         </div>
       </div>
@@ -52,7 +53,7 @@
 
     <div class="flex w-[100%] justify-end">
       <div id="hamMenu"
-        class="hidden fixed bg-white px-4 w-[100px] h-[120px] shadow-md flex-col my-12"
+        class="hidden fixed bg-white px-4 w-[120px] h-[120px] shadow-md flex-col my-12"
       >
         <ul class="flex items-center my-2 justify-end">
           <a href="homepage.html" class="hover:border-b-2 hover:border-black">Home</a>
@@ -60,22 +61,23 @@
         <ul class="flex items-center my-2 justify-end">
           <a href="../about-page.html" class="hover:border-b-2 hover:border-black">About</a>
         </ul>
-        <ul class="flex items-center my-2 justify-end">
-          <a href="" class="hover:border-b-2 hover:border-black">Setting</a>
+        <ul class="flex items-center my-2 justify-between">
+          <button id="ENGLang" type="button" onclick="changeLanguage('en')" class="bg-black text-white px-2 rounded-md">EN</button>
+          <button id="IDLang" type="button" onclick="changeLanguage('id')" class="px-2 rounded-md border-[2px] active:bg-black active:text-white">ID</button>
         </ul>
       </div>
     </div>
 
     <!-- h1 -->
     <div class="flex flex-col mx-4 md:mx-16 xl:mx-40 xl:my-4">
-      <h1 class="text-black text-[30px]  font-bold mt-20 md:text-5xl lg:text-[60px] xl:text-[80px]">
+      <h1 id="h1" class="text-black text-[30px]  font-bold mt-20 md:text-5xl lg:text-[60px] xl:text-[80px]">
         Easy way to learn Calculus
       </h1>
 
-      <div class="h-50 w-100 my-4 xl:my-12">
+      <div class="flex h-[150px] w-200 my-4 sm:h-[300px] md:h-[250px] xl:h-[300px] justify-center">
         <img
-          class="h-[100px] md:h-[180px]"
-          src="../../../src/img/Calculus.svg"
+          class="flex h-[100%] w-[100%] lg:w-[50%]"
+          src="../../../src/img/teacher-flatline.svg"
           alt="Rumus Turunan"
         />
       </div>
@@ -88,7 +90,7 @@
               class="flex items-center justify-center w-[150px] h-[80px] bg-white rounded-md border border-black shadow-[8px_8px] my-2 hover:my-0 hover:shadow-[16px_16px] active:shadow-[2px_2px] active:my-4 lg:w-[230px] xl:w-[300px] xl:h-[100px]"
             >
               <div>
-                <p class="text-black text-[20px] font-bold xl:text-[25px]">Calculus 1</p>
+                <p id="button1Text" class="text-black text-[20px] font-bold xl:text-[25px]">Calculus 1</p>
               </div>
             </button>
           </a>
@@ -99,7 +101,7 @@
               class="flex items-center justify-center w-[150px] h-[80px] bg-white rounded-md border border-black shadow-[8px_8px] my-2 hover:my-0 hover:shadow-[16px_16px] active:shadow-[2px_2px] active:my-4 lg:w-[230px] xl:w-[300px] xl:h-[100px]"
             >
               <div>
-                <p class="text-black text-[20px] font-bold xl:text-[25px]">
+                <p id="button2Text" class="text-black text-[20px] font-bold xl:text-[25px]">
                   Calculus 2 <br />
                 </p>
 

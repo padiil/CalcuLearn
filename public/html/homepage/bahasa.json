@@ -1,0 +1,36 @@
+{
+  "homepage": {
+    "en": {},
+    "id": {
+      "h1": "Cara mudah belajar Kalkulus",
+      "button1": "Kalkulus 1",
+      "button2": "Kalkulus 2"
+    }
+  },
+
+  "contentPage": {
+    "en": {},
+    "id": {
+      "h1": "Kalkulus 1",
+      "description": "Kalkulus 1 merupakan mata kuliah pengantar Kalkulus yang mencakup prinsip dasar Kalkulus diferensial dan integral. Materi ini biasanya diambil oleh siswa yang mengambil jurusan matematika, sains, teknik, atau bidang terkait. Dalam materi ini, siswa belajar caranya untuk menghitung turunan fungsi, menyelesaikan masalah optimasi, dan mengintegrasikan fungsi.",
+      "buttonLinear": "Fungsi Linear",
+      "buttonQuadratic": "Fungsi Kuadrat",
+      "buttonCubic": "Fungsi Kubik",
+      "buttonTrigonometric": "Fungsi Trigonometri",
+      "buttonExponential": "Fungsi Eksponen",
+      "buttonLogarithmic": "Fungsi Logaritma"
+    }
+  },
+  "linearPage": {
+    "en": {},
+    "id": {}
+  },
+  "cubicPage": {
+    "en": {},
+    "id": {}
+  },
+  "quadraticPage": {
+    "en": {},
+    "id": {}
+  }
+}

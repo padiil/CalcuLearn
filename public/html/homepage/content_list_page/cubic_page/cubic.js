@@ -29,7 +29,7 @@ function plotGraph() {
           inputA.value + "x³")}${(document.getElementById(
           "bExpression"
         ).innerText = " + " + inputB.value)}${(document.getElementById("cExpression").innerText = "x² + " + inputC.value)}${(document.getElementById("dExpression").innerText = "x + " + inputD.value)}`,
-          borderColor: "rgb(75, 192, 192)",
+          borderColor: "rgb(244,206,20)",
           data: [],
           fill: false,
         },
@@ -110,7 +110,7 @@ function resetGraph() {
       datasets: [
         {
           label: "Cubic Function",
-          borderColor: "rgb(75, 192, 192)",
+          borderColor: "rgb(244,206,20)",
           data: [],
           fill: false,
         },

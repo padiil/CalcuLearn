@@ -26,7 +26,7 @@ function plotGraph() {
               inputA.value + "x")}${(document.getElementById(
               "bExpression"
             ).innerText = " + " + inputB.value)}`,
-            borderColor: "rgb(75, 192, 192)",
+            borderColor: "rgb(244,206,20)",
             data: [],
             fill: false,
           },
@@ -90,7 +90,7 @@ function plotGraph() {
         datasets: [
           {
             label: "Linear Function",
-            borderColor: "rgb(75, 192, 192)",
+            borderColor: "rgb(244,206,20)",
             data: [],
             fill: false,
           },

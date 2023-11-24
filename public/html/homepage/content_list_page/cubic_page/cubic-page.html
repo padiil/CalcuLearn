@@ -51,8 +51,9 @@
             >
           </ul>
 
-          <ul class="flex items-center mx-4 mr-0">
-            <a href="" class="hover:border-b-4 hover:border-black">Setting</a>
+          <ul class="flex items-center mx-4 mr-0 w-20 justify-between">
+            <button id="ENGLang" type="button" onclick="changeLanguage('en')" class="border-black bg-black text-white px-2 rounded-md">EN</button>
+            <button id="IDLang" type="button" onclick="changeLanguage('id')" class="px-2 rounded-md border-[2px] active:bg-black active:text-white">ID</button>
           </ul>
         </div>
       </div>
@@ -62,33 +63,25 @@
     <!-- menu hamburger -->
 
     <div class="flex w-[100%] justify-end">
-      <div
-        id="hamMenu"
-        class="hidden fixed bg-white px-4 w-[100px] h-[120px] shadow-md flex-col my-12"
+      <div id="hamMenu"
+        class="hidden fixed bg-white px-4 w-[120px] h-[120px] shadow-md flex-col my-12"
       >
         <ul class="flex items-center my-2 justify-end">
-          <a
-            href="../../homepage.html"
-            class="hover:border-b-2 hover:border-black"
-            >Home</a
-          >
+          <a href="../../homepage.html" class="hover:border-b-2 hover:border-black">Home</a>
         </ul>
         <ul class="flex items-center my-2 justify-end">
-          <a
-            href="../../../about-page.html"
-            class="hover:border-b-2 hover:border-black"
-            >About</a
-          >
+          <a href="../../../about-page.html" class="hover:border-b-2 hover:border-black">About</a>
         </ul>
-        <ul class="flex items-center my-2 justify-end">
-          <a href="" class="hover:border-b-2 hover:border-black">Setting</a>
+        <ul class="flex items-center my-2 justify-between">
+          <button id="ENGLang" type="button" onclick="changeLanguage('en')" class="bg-black text-white px-2 rounded-md">EN</button>
+          <button id="IDLang" type="button" onclick="changeLanguage('id')" class="px-2 rounded-md border-[2px] active:bg-black active:text-white">ID</button>
         </ul>
       </div>
     </div>
     <script src="../../../../js/script.js"></script>
 
     <!-- content -->
-    <div class="flex flex-col mb-16 mx-4 mt-12 md:mx-16 xl:mx-40 xl:mt-16">
+    <div class="flex flex-col mb-4 mx-4 mt-12 md:mx-16 xl:mx-40 xl:mt-16">
       <!-- deskripsi -->
       <div class="text-[12px] mt-6 mb-8 md:text-[16px]">
         <h1 class="text-[20px] font-bold md:text-[35px]">Cubic Function</h1>
@@ -122,7 +115,7 @@
           <!-- input section -->
           <div class="mb-4 text-center text-[15px] xl:text-[20px]">
             <h2>General Form</h2>
-            <p class="text-[18px] xl:text-[25px]">f(x) = ax3 + bx2 + cx + d <br> a ≠ 0</p>
+            <p class="text-[18px] xl:text-[25px]">f(x) = ax³ + bx² + cx + d <br> a ≠ 0</p>
           </div>
           <div
             class="flex flex-col justify-center bg-gray-200 rounded-md h-48 lg:w-[330px] xl:w-[400px]"
@@ -202,7 +195,7 @@
                 datasets: [
                   {
                     label: "Cubic Function",
-                    borderColor: "rgb(75, 192, 192)",
+                    borderColor: "rgb(244,206,20)",
                     data: [],
                     fill: false,
                   },
