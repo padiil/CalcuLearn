@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CalcuLearn</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body class="font-ibm bg-white">
+    <!-- Navbar -->
+    <div
+      class="flex fixed items-center w-full top-0 left-0 bg-white shadow-[0px_4px_4px_0px_#00000024] px-4 md:px-16 xl:px-40 xl:h-14"
+    >
+      <div class="flex w-[100%] justify-between">
+        <div class="flex text-black text-2xl h-12 xl:text-3xl">
+          <p class="self-center">CalcuLearn</p>
+          <div class="text-sm items-start">
+            <p>beta</p>
+          </div>
+        </div>
+
+        <!-- hamburger button -->
+        <div class="flex flex-col items-end mt-3 md:hidden">
+          <div class="flex">
+            <button id="hamButton" class="justify-center flex-col space-y-2">
+              <span class="block w-5 h-[2px] rounded-md bg-black"></span>
+              <span class="block w-8 h-[2px] rounded-md bg-black"></span>
+              <span class="block w-8 h-[2px] rounded-md bg-black"></span>
+            </button>
+          </div>
+        </div>
+
+        <!-- menu -->
+        <div class="flex max-md:hidden">
+          <ul class="flex items-center mx-4">
+            <a
+              href="homepage/homepage.html"
+              class="hover:border-b-4 hover:border-black"
+              >Home</a
+            >
+          </ul>
+
+          <ul class="flex items-center mx-4">
+            <a href="" class="hover:border-b-4 hover:border-black">About</a>
+          </ul>
+
+          <ul class="flex items-center mx-4 mr-0 w-20 justify-between">
+            <button
+              id="ENGLang"
+              type="button"
+              onclick="changeLanguage('en')"
+              class="border-black bg-black text-white px-2 rounded-md"
+            >
+              EN
+            </button>
+            <button
+              id="IDLang"
+              type="button"
+              onclick="changeLanguage('id')"
+              class="px-2 rounded-md border-[2px] active:bg-black active:text-white"
+            >
+              ID
+            </button>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- content -->
+    <!-- menu hamburger -->
+
+    <div class="flex w-[100%] justify-end">
+      <div
+        id="hamMenu"
+        class="hidden fixed bg-white px-4 w-[100px] h-[120px] shadow-md flex-col my-12"
+      >
+        <ul class="flex items-center my-2 justify-end">
+          <a
+            href="homepage/homepage.html"
+            class="hover:border-b-2 hover:border-black"
+            >Home</a
+          >
+        </ul>
+        <ul class="flex items-center my-2 justify-end">
+          <a href="" class="hover:border-b-2 hover:border-black">About</a>
+        </ul>
+        <ul class="flex items-center my-2 justify-end">
+          <a href="" class="hover:border-b-2 hover:border-black">Setting</a>
+        </ul>
+      </div>
+    </div>
+
+    <!-- content -->
+    <div class="flex flex-col mx-4 my-16 md:mx-16 xl:mx-40">
+      <div class="flex justify-center my-4">
+        <h1 class="flex font-bold text-[30px]">Our Team</h1>
+      </div>
+      <div
+        class="flex flex-col items-center px-12 sm:flex-row sm:px-0 sm:justify-between"
+      >
+        <div
+          class="flex flex-col w-[100%] py-2 px-2 items-center border-[2px] rounded-md bg-white my-4 shadow-[4px_4px] sm:w-[30%]"
+        >
+          <div
+            class="flex w-[100%] h-[200px] rounded-md bg-gray-300 sm:h-[230px] md:h-[200px] lg:h-[300px]"
+          >
+            <img
+              src="../../src/img/Aar.jpeg"
+              alt=""
+              class="flex w-[100%] object-cover h-[100%] rounded-md"
+            />
+          </div>
+          <div
+            class="flex flex-col justify-center items-center w-[100%] h-[80px] text-[15px] lg:text-[25px] text-center"
+          >
+            <div>
+              <p class="font-bold">Aar Lazuardi Majid</p>
+              <p class="text-[12px] lg:text-[18px]">NPM: 237006070</p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col w-[100%] py-2 px-2 items-center border-[2px] rounded-md bg-white my-4 shadow-[4px_4px] sm:w-[30%]"
+        >
+          <div
+            class="flex w-[100%] h-[200px] rounded-md sm:h-[230px] md:h-[200px] lg:h-[300px]"
+          >
+            <img
+              src="../../src/img/Fadil.jpeg"
+              alt=""
+              class="flex w-[100%] object-cover h-[100%] rounded-md"
+            />
+          </div>
+          <div
+            class="flex flex-col justify-center items-center w-[100%] h-[80px] text-[15px] lg:text-[25px] text-center"
+          >
+            <div>
+              <p class="font-bold">Fadhil Gani</p>
+              <p class="text-[12px] lg:text-[18px]">NPM: 237006082</p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col w-[100%] py-2 px-2 items-center border-[2px] rounded-md bg-white my-4 shadow-[4px_4px] sm:w-[30%]"
+        >
+          <div
+            class="flex w-[100%] h-[200px] rounded-md bg-gray-300 sm:h-[230px] md:h-[200px] lg:h-[300px]"
+          >
+            <img
+              src="../../src/img/Bajsan.jpeg"
+              alt=""
+              class="flex w-[100%] object-cover h-[100%] rounded-md"
+            />
+          </div>
+          <div
+            class="flex flex-col justify-center items-center w-[100%] h-[80px] text-[15px] lg:text-[25px] text-center"
+          >
+            <div>
+              <p class="font-bold">Bajsan Arsyurrohman</p>
+              <p class="text-[12px] lg:text-[18px]">NPM: 237006088</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>

@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CalcuLearn</title>
-    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../../css/style.css" />
   </head>
-  <body class="font-ibm">
+  <body class="font-ibm bg-white">
     <!-- Navbar -->
     <div
       class="flex fixed items-center w-full top-0 left-0 bg-white shadow-[0px_4px_4px_0px_#00000024] px-4 md:px-16 xl:px-40 xl:h-14"
@@ -33,15 +33,24 @@
         <!-- menu -->
         <div class="flex max-md:hidden">
           <ul class="flex items-center mx-4">
-            <a href="../homepage.html" class="hover:border-b-4 hover:border-black">Home</a>
+            <a
+              href="../homepage.html"
+              class="hover:border-b-4 hover:border-black"
+              >Home</a
+            >
           </ul>
 
           <ul class="flex items-center mx-4">
-            <a href="" class="hover:border-b-4 hover:border-black">About</a>
+            <a
+              href="../../about-page.html"
+              class="hover:border-b-4 hover:border-black"
+              >About</a
+            >
           </ul>
 
-          <ul class="flex items-center mx-4 mr-0">
-            <a href="" class="hover:border-b-4 hover:border-black">Setting</a>
+          <ul class="flex items-center mx-4 mr-0 w-20 justify-between">
+            <button id="ENGLang" type="button" onclick="changeLanguage('en')" class="border-black bg-black text-white px-2 rounded-md">EN</button>
+            <button id="IDLang" type="button" onclick="changeLanguage('id')" class="px-2 rounded-md border-[2px] active:bg-black active:text-white">ID</button>
           </ul>
         </div>
       </div>
@@ -52,36 +61,47 @@
 
     <div class="flex w-[100%] justify-end">
       <div id="hamMenu"
-        class="hidden fixed bg-white px-4 w-[100px] h-[120px] shadow-md flex-col my-12"
+        class="hidden fixed bg-white px-4 w-[120px] h-[120px] shadow-md flex-col my-12"
       >
         <ul class="flex items-center my-2 justify-end">
           <a href="../homepage.html" class="hover:border-b-2 hover:border-black">Home</a>
         </ul>
         <ul class="flex items-center my-2 justify-end">
-          <a href="" class="hover:border-b-2 hover:border-black">About</a>
+          <a href="../../about-page.html" class="hover:border-b-2 hover:border-black">About</a>
         </ul>
-        <ul class="flex items-center my-2 justify-end">
-          <a href="" class="hover:border-b-2 hover:border-black">Setting</a>
+        <ul class="flex items-center my-2 justify-between">
+          <button id="ENGLang" type="button" class="bg-black text-white px-2 rounded-md">EN</button>
+          <button id="IDLang" type="button" class="px-2 rounded-md border-[2px] active:bg-black active:text-white">ID</button>
         </ul>
       </div>
     </div>
 
     <!-- content -->
-    <div class="flex flex-col mt-16 mx-4 sm:flex-row md:mx-16 md:flex-row xl:mx-40 xl:my-24">
+    <div
+      class="flex flex-col mt-16 mx-4 sm:flex-row md:mx-16 md:flex-row xl:mx-40 xl:my-24"
+    >
       <!-- pharagraf section -->
       <div class="flex-col">
         <!-- h1 -->
         <div class="flex">
-          <h1 class="text-black text-[25px] font-bold md:text-[35px] lg:text-[45px]">Calculus 1</h1>
+          <h1 id="h1"
+            class="text-black text-[25px] font-bold md:text-[35px] lg:text-[45px]"
+          >
+            Calculus 1
+          </h1>
         </div>
 
-        <!-- h2 -->
-        <div class="my-4">
-          <h2 class="text-black text-[30px] font-bold md:text-[45px]">f(x) = 2x + 4</h2>
+        <!-- image -->
+        <div class="flex h-[150px] w-200 my-4 sm:h-[300px] md:h-[250px] xl:h-[300px] justify-center">
+          <img
+            class="flex h-[100%] w-[100%]"
+            src="../../../../src/img/Mediamodifier-Design.svg"
+            alt="Rumus Turunan"
+          />
         </div>
 
         <div class="flex">
-          <p class="flex text-black text-[12px] font-normal md:text-[16px]">
+          <p id="description" class="flex text-black text-[12px] font-normal md:text-[16px]">
             Calculus 1 is an introductory course in Calculus that covers the
             basic principles of differential and integral Calculus. It is
             usually taken by students who are majoring in mathematics, science,
@@ -96,7 +116,7 @@
       <div class="flex-col sm:ml-12 md:ml-12 xl:ml-24">
         <div class="flex my-8 justify-center">
           <a href="linear_page/linear-page.html">
-            <button
+            <button id="buttonLinear"
               class="w-[200px] h-[50px] text-[13px] bg-white rounded-md border border-black font-bold shadow-[4px_4px] hover:shadow-[8px_8px] active:shadow-[1px_1px] lg:w-[250px] xl:w-[300px] xl:h-[70px] xl:text-[20px]"
             >
               Linear Function
@@ -105,30 +125,28 @@
         </div>
 
         <div class="flex justify-center">
-          <a href="">
-            <button
-              class="w-[200px] h-[50px] bg-black text-white rounded-md border text-[13px] border-black font-bold lg:w-[250px] xl:w-[300px] xl:h-[70px] xl:text-[20px]"
+          <a href="quadratic_page/quadratic-page.html">
+            <button id="buttonQuadratic"
+              class="w-[200px] h-[50px] text-[13px] bg-white rounded-md border border-black font-bold shadow-[4px_4px] hover:shadow-[8px_8px] active:shadow-[1px_1px] lg:w-[250px] xl:w-[300px] xl:h-[70px] xl:text-[20px]"
             >
               Quadratic Function
-              <p class="font-normal">(soon)</p>
             </button>
           </a>
         </div>
 
         <div class="flex my-6 justify-center">
-          <a href="">
-            <button
-              class="w-[200px] h-[50px] bg-black text-white rounded-md border text-[13px] border-black font-bold lg:w-[250px] xl:w-[300px] xl:h-[70px] xl:text-[20px]"
+          <a href="cubic_page/cubic-page.html">
+            <button id="buttonCubic"
+            class="w-[200px] h-[50px] text-[13px] bg-white rounded-md border border-black font-bold shadow-[4px_4px] hover:shadow-[8px_8px] active:shadow-[1px_1px] lg:w-[250px] xl:w-[300px] xl:h-[70px] xl:text-[20px]"
             >
               Cubic Function
-              <p class="font-normal">(soon)</p>
             </button>
           </a>
         </div>
 
         <div class="flex my-6 justify-center">
           <a href="">
-            <button
+            <button id="buttonTrigonometric"
               class="w-[200px] h-[50px] bg-black text-white rounded-md border text-[13px] border-black font-bold lg:w-[250px] xl:w-[300px] xl:h-[70px] xl:text-[20px]"
             >
               Trigonometric Function
@@ -139,7 +157,7 @@
 
         <div class="flex my-6 justify-center">
           <a href="">
-            <button
+            <button id="buttonExponential"
               class="w-[200px] h-[50px] text-[13px] bg-black text-white rounded-md border border-black font-bold lg:w-[250px] xl:w-[300px] xl:h-[70px] xl:text-[20px]"
             >
               Exponential Function
@@ -150,7 +168,7 @@
 
         <div class="flex my-6 justify-center">
           <a href="">
-            <button
+            <button id="buttonLogarithmic"
               class="w-[200px] h-[50px] text-[13px] bg-black text-white rounded-md border border-black font-bold lg:w-[250px] xl:w-[300px] xl:h-[70px] xl:text-[20px]"
             >
               Logarithmic Function
@@ -161,6 +179,7 @@
       </div>
     </div>
 
-    <script src="../../js/script.js"></script>
+    <script src="../../../js/script.js"></script>
+    <script src="langContent.js"></script>
   </body>
 </html>
