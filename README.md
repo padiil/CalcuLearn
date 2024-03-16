@@ -20,7 +20,7 @@ Project ini dibuat berdasarkan tugas dari mata kuliah kalkulus
 
 untuk membuka website nya silahkan jalankan index.html yang berada dalam folder root. Atau silahkan langsung saja buka link berikut
 
-https://kudill.github.io/UAS-Kalkulus/
+https://padiil.github.io/UAS-Kalkulus/
 
 Website ini sudah responsive, jadi bisa di buka melalui desktop maupun mobile.
 
